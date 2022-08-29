@@ -1,0 +1,20 @@
+<div class="container_content">
+    <div class="contaier_total">
+        <p class="titulo">{{titulo}}</p>
+        <h1 class="total">{{total | currency}}</h1>
+    </div>
+    <div class="container_ingreso_egreso">
+        <div class="container_formato_rectangulo fondo_celeste">
+            <p class="texto_negro">INGRESOS</p>
+            <p class="numero">{{ingreso | currency}}</p>
+        </div>
+        <div class="container_formato_rectangulo fondo_naranja">
+            <p class="texto_negro">EGRESOS</p>
+            <div class="numeros">
+                <p class="numero">{{egreso | currency}}</p>
+                <p class="porcentaje">{{porcentajeEgreso | percent}}</p>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,50 @@
+.container_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+
+}
+.container_head{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-image: url('https://es.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_no_mans_sky_03_3840x1080.jpg&height=600&sharpen');
+    padding-bottom: 10px;
+}
+.container_ingreso_egreso{
+    background-color: white;
+    width: 98%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    box-sizing: border-box;
+}
+.container_carga{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+    width: 100%;
+}
+
+@media (max-width:860px){
+
+    .container_ingreso_egreso{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_carga{
+        min-width: 350px;
+        width: 430px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container_ingreso_egreso{
+        background-color: white;
+    }
+}

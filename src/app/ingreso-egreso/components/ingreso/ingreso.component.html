@@ -1,0 +1,13 @@
+<div class="container_content">
+    <div class="titulo ">
+        <h2 [ngClass]="{'texto_celeste':estilo,'texto_naranja':!estilo}">{{titulo | uppercase}}</h2>
+    </div>
+    <div class="contiainer_item" *ngFor="let item of listaItems; let i = index"
+        [ngClass]="{'fondo_celeste':( i%2 == 0 ),'fondo_blanco':( i%2 != 0 ),'fondo_rosa':!estilo}">
+        <p>{{item.detalle}}</p>
+        <div class="container_precio">
+            <p [ngClass]="{'texto_celeste':estilo,'texto_naranja':!estilo}">{{item.dinero | currency}}</p>
+            <i class="bi bi-trash" (click)="quitarElemento(i)"></i>
+        </div>
+    </div>
+</div>

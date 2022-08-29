@@ -1,0 +1,17 @@
+<div class="container_content" [formGroup]="formulario">
+    <div class="select">
+        <select (change)="cambioSelect($event)" formControlName="operacion" [ngClass]="{'borde_verde':estadoOperacion,'borde_rojo':!estadoOperacion}">
+            <option value={{ingreso}}>{{ingreso}}</option>
+            <option value={{egreso}}>{{egreso}}</option>
+        </select>
+    </div>
+    <div class="descripcion">
+        <input type="text" placeholder="Agregar Descripcion" formControlName="detalle" [ngClass]="{'borde_verde':estadoOperacion,'borde_rojo':!estadoOperacion}">
+    </div>
+    <div class="valor">
+        <input type="text" placeholder="Valor"  formControlName="dinero" [ngClass]="{'borde_verde':estadoOperacion,'borde_rojo':!estadoOperacion}">
+    </div>
+    <div class="boton">
+        <button (click)="agregarItem()" [hidden]="formulario.invalid"  [ngClass]="{'borde_verde fondo_verde':estadoOperacion ,'borde_rojo fondo_rojo':!estadoOperacion}">{{textoBoton}}</button>
+    </div>
+</div>

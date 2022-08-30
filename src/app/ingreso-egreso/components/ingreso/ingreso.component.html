@@ -8,6 +8,7 @@
         <div class="container_precio">
             <p [ngClass]="{'texto_celeste':estilo,'texto_naranja':!estilo}">{{item.dinero | currency}}</p>
             <i class="bi bi-trash" (click)="quitarElemento(i)"></i>
+            <i class="bi bi-arrow-left-right" (click)="enviarItemAEgreso(i)"></i>
         </div>
     </div>
 </div>

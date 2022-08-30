@@ -9,6 +9,7 @@
             <p [ngClass]="{'texto_celeste':estilo,'texto_naranja':!estilo}">{{item.dinero | currency}}</p>
             <p class="porcentaje">{{obtenerPorcentaje(item.dinero) | percent}}</p>
             <i class="bi bi-trash" (click)="quitarElemento(i)"></i>
+            <i class="bi bi-arrow-left-right" (click)="enviarItemAIgreso(i)"></i>
         </div>
     </div>
 </div>

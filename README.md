@@ -1,27 +1,24 @@
-# CostoAngular
+# Proyecto de gestion de COSTOS.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+Este proyecto es una demostracion de las habilidades que voy adquiriendo mientras comienzo con mi aprendizaje en el mundo del desarrollo de software FrontEnd,
+utilisando Angular
 
-## Development server
+## Listado de conocimientos aplicados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Manejo de formulario reactivos con FormBuilde, FormGroup.
 
-## Code scaffolding
+- Validación de formulario mediante Validators.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Uso de Pipe para el formateo de valores numericos.
 
-## Build
+- Utilización de Servicios.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Uso de Modelo de dato.
 
-## Running unit tests
+- Uso de archivo de constantes para centralizar en un unico lugar todos los datos que pueden ser redefinidos.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- CSS
 
-## Running end-to-end tests
+- JavaScript
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- TyoeScript

@@ -26,5 +26,11 @@ export class IngresoComponent implements DoCheck {
   quitarElemento(index: number){
     this.listaItems = this.finanzaService.quitarItemIngreso(index);
   }
+
+  enviarItemAEgreso(index: number){
+    let item: ItemSaldo = this.listaItems[index];
+    this.quitarElemento(index);
+    this.finanzaService.agregarItemEgreso(item);
+  }
 }
 

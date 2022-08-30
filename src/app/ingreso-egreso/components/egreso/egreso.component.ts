@@ -30,5 +30,10 @@ export class EgresoComponent implements DoCheck {
   obtenerPorcentaje(valor: string){
     return this.finanzaService.getPorcentajeRespecto(Number.parseFloat(valor)).toString();
   }
+  enviarItemAIgreso(index: number){
+    let item: ItemSaldo = this.listaItems[index];
+    this.quitarElemento(index);
+    this.finanzaService.agregarItemIngreso(item);
+  }
 
 }

@@ -6,6 +6,7 @@
     margin: 0;
     align-items: center;
 
+
 }
 .container_head{
     display: flex;
@@ -25,11 +26,14 @@
     box-sizing: border-box;
 }
 .container_carga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
     width: 100%;
+    background-color: rgb(243, 240, 240);
 }
 
 @media (max-width:860px){
@@ -40,9 +44,10 @@
     }
     .container_carga{
         min-width: 350px;
-        width: 430px;
+        width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
+        background-color: rgb(243, 240, 240);
     }
     .container_ingreso_egreso{
         background-color: white;

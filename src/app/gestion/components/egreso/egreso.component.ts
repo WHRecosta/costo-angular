@@ -1,7 +1,8 @@
 import { Component, DoCheck} from '@angular/core';
-import { TITULO_EGRESO } from '../../constantes-ingreso-egreso';
-import { ItemSaldo } from '../../models/item-saldos.model';
-import { FinanzaService } from '../../services/finanza.service';
+import { TITULO_EGRESO } from 'src/app/core/constants/finanzas-constants';
+import { ItemSaldo } from 'src/app/core/models/item-saldos.model';
+import { FinanzaService } from 'src/app/core/services/finanza.service';
+
 
 @Component({
   selector: 'app-egreso',
@@ -17,11 +18,11 @@ export class EgresoComponent implements DoCheck {
   constructor(private finanzaService: FinanzaService) {
     this.titulo = TITULO_EGRESO;
    }
-  
+
   ngDoCheck(): void {
     this.listaItems = this.finanzaService.getListaItemsEgreso();
 
-    
+
   }
 
   quitarElemento(index: number){

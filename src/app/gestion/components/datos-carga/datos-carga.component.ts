@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { BOTON_EGRESO, BOTON_INGRESO, SELECT_EGRESO, SELECT_INGRESO } from '../../constantes-ingreso-egreso';
-import { ItemSaldo } from '../../models/item-saldos.model';
-import { FinanzaService } from '../../services/finanza.service';
+import { SELECT_INGRESO, BOTON_INGRESO, SELECT_EGRESO, BOTON_EGRESO } from 'src/app/core/constants/finanzas-constants';
+import { ItemSaldo } from 'src/app/core/models/item-saldos.model';
+import { FinanzaService } from 'src/app/core/services/finanza.service';
+
+
 
 
 
@@ -27,7 +29,7 @@ export class DatosCargaComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private finanzaService: FinanzaService) { 
+    private finanzaService: FinanzaService) {
       this.ingreso = SELECT_INGRESO;
       this.egreso = SELECT_EGRESO;
     }

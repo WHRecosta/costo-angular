@@ -1,3 +1,4 @@
+
 export const TITULO_PRINCIPAL = "Presupuesto Disponible";
 export const TITULO_INGRESO = "INGRERSOS";
 export const TITULO_EGRESO = "EGRESOS";

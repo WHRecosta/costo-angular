@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ItemSaldo } from '../models/item-saldos.model';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -67,13 +68,13 @@ export class FinanzaService {
   calcularTotalIngresos(){
     this.totalIngresos = 0.0;
     this.listaItemsIngreso.map(item =>{
-      this.totalIngresos += Number.parseFloat(item.dinero); 
+      this.totalIngresos += Number.parseFloat(item.dinero);
     })
   }
   calcularTotalEgreso(){
     this.totalEgresos = 0.0;
     this.listaItemsEgreso.map(item =>{
-      this.totalEgresos += Number.parseFloat(item.dinero); 
+      this.totalEgresos += Number.parseFloat(item.dinero);
     })
   }
 

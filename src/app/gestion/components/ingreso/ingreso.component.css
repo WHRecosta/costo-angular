@@ -1,6 +1,7 @@
 .container_content{
     display: flex;
     flex-direction: column;
+
 }
 .titulo{
     padding-left: 15px;
@@ -37,28 +38,19 @@ p{
     gap: 30px;
     padding-left: 5px;
     padding-right: 5px;
-    
+
 }
-.porcentaje{
-    font-size: 0.8rem;
-    background-color: rgba(185, 61, 223, 0.808);
-    max-height: 30px;
-    height: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    color: white;
-}
+
 .container_precio i{
     color: rgb(102, 0, 0);
     padding: 3px;
 }
 .container_precio i:hover{
     font-size: 1.23rem;
-    color: rgb(255, 126, 20) ;
+    color: rgb(3, 108, 179);
 }
+
+
 .fondo_celeste{
     background-color: rgb(233, 248, 255);
 }

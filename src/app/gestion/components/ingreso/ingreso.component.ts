@@ -1,7 +1,8 @@
 import { Component, DoCheck} from '@angular/core';
-import { SELECT_INGRESO } from '../../constantes-ingreso-egreso';
-import { ItemSaldo } from '../../models/item-saldos.model';
-import { FinanzaService } from '../../services/finanza.service';
+import { SELECT_INGRESO } from 'src/app/core/constants/finanzas-constants';
+import { ItemSaldo } from 'src/app/core/models/item-saldos.model';
+import { FinanzaService } from 'src/app/core/services/finanza.service';
+
 
 @Component({
   selector: 'app-ingreso',
@@ -13,8 +14,8 @@ export class IngresoComponent implements DoCheck {
   titulo: string;
   listaItems: Array<ItemSaldo> = [];
   estilo: boolean =  true;
-  
-  constructor(private finanzaService: FinanzaService) { 
+
+  constructor(private finanzaService: FinanzaService) {
     this.titulo = SELECT_INGRESO;
   }
 
